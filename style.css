@@ -1,0 +1,275 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    background-color: hsl(226, 43%, 10%);
+    
+    color:white
+}
+.container{
+    width: 88%;
+    margin: 2rem auto;
+}
+.menu-card{
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 20px;
+}
+.card-report {
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+    gap: 1.2rem;
+}
+.card-report img{
+    width: 26%;
+   border-radius: 50%;
+   border: 3px solid #fff;
+   max-width: 130px;
+}
+.card-report.report{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.report p{
+    color: hsl(236, 100%, 87%);
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+.name{
+    font-size: 1.4rem;
+    font-weight: 300;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu-link{
+    padding:20px;
+    font-size: 19px;
+    color: hsl(236, 100%, 87%);
+    cursor: pointer;
+}
+
+.menu-link:active{
+    color:#fff;
+}
+.menu-link:hover{
+    color:#fff;
+}
+/* ------------------------------CARD1---------------------------- */
+.regular-card{
+    display: flex;
+    background-color: hsl(15, 100%, 70%);
+    border-radius: 20px;
+    margin-top: 1.5rem;
+    background-image: url(/images/icon-work.svg);
+    background-repeat: no-repeat;
+    background-position: 92% -10px;
+}
+.work{
+    display: flex;
+    background-color: hsl(15, 100%, 70%);
+    border-radius: 20px;
+    margin-top: 1.5rem;
+    background-image: url(/images/icon-work.svg);
+    background-repeat: no-repeat;
+    background-position: 92% -10px;
+}
+.property-card{
+    background-color: hsl(235, 46%, 20%);
+    margin-top: 2.5rem;
+    border-radius: 20px;
+    width: 100%;
+    padding: 30px 20px;
+}
+.property-card:hover{
+    background-color: #34397b;
+}
+.row1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.row2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.title{
+    font-size: 18px;
+    font-weight: 700;
+}
+.other{
+    display: flex;
+    gap: 2px;
+}
+.point{
+    background-color: hsl(236, 100%, 87%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.point:hover{
+    background-color: hsl(0, 0%, 100%);
+}
+
+.hours{
+    font-size: 35px;
+    font-weight: 300;
+}
+.description{
+    color:hsl(236, 100%, 87%);
+}
+
+/* ------------------------------CARD2---------------------------- */
+
+.play{
+    display: flex;
+    background-color: hsl(195, 74%, 62%);
+    border-radius: 20px;
+    margin-top: 1.5rem;
+    background-image: url(/images/icon-play.svg);
+    background-repeat: no-repeat;
+    background-position: 92% -10px;
+}
+
+/* ------------------------------CARD3---------------------------- */
+
+.study{
+    display: flex;
+    background-color: hsl(348, 100%, 68%);
+    border-radius: 20px;
+    margin-top: 1.5rem;
+    background-image: url(/images/icon-study.svg);
+    background-repeat: no-repeat;
+    background-position: 92% -10px;
+}
+
+/* ------------------------------CARD4---------------------------- */
+
+.exercise{
+    display: flex;
+    background-color: hsl(145, 58%, 55%);
+    border-radius: 20px;
+    margin-top: 1.5rem;
+    background-image: url(/images/icon-exercise.svg);
+    background-repeat: no-repeat;
+    background-position: 92% -10px;
+}
+
+/* ------------------------------CARD5---------------------------- */
+
+.social{
+    display: flex;
+    background-color: hsl(264, 64%, 52%);
+    border-radius: 20px;
+    margin-top: 1.5rem;
+    background-image: url(/images/icon-social.svg);
+    background-repeat: no-repeat;
+    background-position: 92% -10px;
+}
+
+/* ------------------------------CARD6---------------------------- */
+
+.selfcare{
+    display: flex;
+    background-color: hsl(43, 84%, 65%);
+    border-radius: 20px;
+    margin-top: 1.5rem;
+    background-image: url(/images/icon-self-care.svg);
+    background-repeat: no-repeat;
+    background-position: 92% -10px;
+}
+
+/* ------------------------------Responesive 570px---------------------------- */
+
+
+@media screen and (min-width: 570px) {
+    
+    .container{
+        display: grid;
+        grid-template-columns: 48% 48%;
+        justify-content: space-between;
+    }
+    .menu-card{
+        grid-column: 1 / 2 span;
+    }
+
+    .row2{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* ------------------------------Responesive 1440px---------------------------- */
+
+@media screen and (min-width: 1440px) {
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .container{
+        width: 60%;
+       
+        grid-template-columns: 23% 23% 23% 23%;
+    }
+    .card-report{
+        padding: 20px;
+    }
+    .menu-card{
+        grid-row: 1 / 2 span;
+        grid-column: unset;
+        
+    }
+    .work{
+        margin: 0;
+    }
+    
+    .play{
+        margin: 0;
+
+    }
+    .study{
+        margin: 0;
+    }
+    .card-report{
+        flex-direction: column;
+        align-items: flex-start;
+        height: 60%;
+    }
+    .card-report img{
+        width: 4rem;
+    }
+    .name{
+        font-size: 35px;
+    }
+    .report p{
+        margin-top: 20px;
+    }
+    .hours{
+        font-size: 45px;
+    }
+    .menu{
+        height: 30%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .menu-link{
+        padding: 8px 20px;
+        font-size: 16px;
+    }
+}
